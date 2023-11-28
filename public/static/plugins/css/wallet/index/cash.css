@@ -1,0 +1,55 @@
+/**
+ * 操作提示
+ */
+.user-content-body .wallet-cash-auth-tips .title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+.user-content-body .wallet-cash-auth-tips ul li {
+    color: #486d48;
+    line-height: 2.4rem;
+}
+.user-content-body .wallet-cash-auth-tips ul li a {
+    text-decoration: underline;
+}
+
+/**
+ * 弹窗图片验证码
+ */
+.user-content-body .verify-submit-win, .user-content-body .verify-submit-win-new { margin-top: 2rem; display: block; }
+.user-content-body .reg-switch-tips { font-weight: 100; font-size: 1.2rem; color: #f87689; margin-left: 2rem; }
+.user-content-body #verify-win .am-modal-bd { margin-top: 1rem; }
+.user-content-body #verify-win .am-modal-bd .base { overflow: hidden; }
+.user-content-body #verify-win .am-modal-bd .base .verify-tips { font-size: 1.2rem; }
+.user-content-body #verify-img { vertical-align: middle; }
+
+/**
+ * 提现可用金额
+ */
+.user-content-body form.create-info .cash-vaild-mony,
+.user-content-body form.create-info .cash-normal-mony,
+.user-content-body form.create-info .cash-give-mony {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.user-content-body form.create-info .cash-vaild-mony {
+    color: #ed5565;
+}
+.user-content-body form.create-info .cash-normal-mony {
+    color: #55b35a;
+}
+.user-content-body form.create-info .cash-give-mony {
+    color: #666;
+}
+
+/**
+ * 列表
+ */
+.user-content-body .data-list .operation-msg div {
+    max-width: 15rem;
+    max-height: 8rem;
+}
+.user-content-body .data-list .cash-money {
+    color: #FF9800;
+}

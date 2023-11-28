@@ -1,0 +1,28 @@
+.top-info {
+    position: relative;
+    height: 12rem;
+}
+.user-info {
+    width: 10rem;
+}
+.user-info img {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0 auto;
+    display: block;
+}
+.wallet-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 11rem);
+}
+.wallet-info li:first-child {
+    border-top: 0;
+}
+.wallet-info li:last-child {
+    border-bottom: 0;
+}
+.wallet-info li:hover {
+    background: transparent;
+}

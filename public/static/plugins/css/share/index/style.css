@@ -1,0 +1,140 @@
+/**
+ * 分享
+ */
+#modal-plugins-share-goods .am-modal-bd {
+    padding-bottom: 0.7rem;
+}
+.plugins-share-container,
+#plugins-share-layer {
+    display: none;
+}
+.plugins-share ul {
+    overflow: hidden;
+}
+.plugins-share ul li {
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.plugins-share ul li:last-child {
+    margin-right: 0;
+}
+.plugins-share ul li .iconfont {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.plugins-share ul li.share-qq {
+    background: #03a9f4;
+}
+.plugins-share ul li.share-qzone {
+    background: #ff9800;
+}
+.plugins-share ul li.share-weixin {
+    background: #3eab0f;
+}
+.plugins-share ul li.share-sina {
+    background: #e71f2d;
+}
+.plugins-share ul li.share-url {
+    background: #607d8b;
+}
+.plugins-share ul li.share-twitter {
+    background: #1d9bef;
+}
+.plugins-share ul li.share-facebook {
+    background: #3b5897;
+}
+@media only screen and (min-width: 641px) {
+    .plugins-share ul li.share-qq:hover {
+        background: #26bbff;
+    }
+    .plugins-share ul li.share-qzone:hover {
+        background: #fca729;
+    }
+    .plugins-share ul li.share-weixin:hover {
+        background: #49bc18;
+    }
+    .plugins-share ul li.share-sina:hover {
+        background: #f43844;
+    }
+    .plugins-share ul li.share-url:hover {
+        background: #7d9eae;
+    }
+    .plugins-share ul li.share-twitter:hover {
+        background: #048feb;
+    }
+    .plugins-share ul li.share-facebook:hover {
+        background: #4769b2;
+    }
+}
+
+/**
+ * 弹层
+ */
+#plugins-share-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    text-align: center;
+}
+#plugins-share-layer img {
+    max-width: 90%;
+}
+
+/**
+ * 商品页面分享PC
+ */
+.plugins-goods-share-view .share-btn .icon-share {
+    display: inline-block;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+.plugins-goods-share-view .share-list {
+    padding: 0.8rem 1.2rem;
+}
+.plugins-goods-share-view .share-list .plugins-share {
+    min-width: 23.5rem;
+}
+.plugins-goods-share-view .share-list .plugins-share li {
+    margin-bottom: 0;
+}
+/**
+ * 商品页面分享手机
+ */
+@media only screen and (min-width: 641px) {
+    .plugins-share-goods-submit-photo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .plugins-share-goods-submit-photo {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: block !important;
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+        line-height: 3.5rem !important;
+        border-radius: 50%;
+        background: #ededed;
+        border: 0px !important;
+        -webkit-box-shadow: 0 0 1rem rgb(0 0 0 / 28%);
+        -moz-box-shadow: 0 0 1rem rgb(0 0 0 / 28%);
+        box-shadow: 0 0 1rem rgb(0 0 0 / 28%);
+        z-index: 10;
+    }
+    .plugins-share-goods-submit-photo i {
+        color: #666;
+        font-size: 1.6rem;
+    }
+}

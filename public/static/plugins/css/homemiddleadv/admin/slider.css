@@ -1,0 +1,13 @@
+/**
+ * 编辑
+ */
+ul.plug-file-upload-view li {
+    min-width: 20rem;
+    height: auto;
+}
+.url-container > div.am-input-group:not(:first-child) {
+    margin-top: 0.5rem;
+}
+.url-container > .am-input-group button {
+    width: 11rem;
+}

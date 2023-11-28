@@ -1,0 +1,38 @@
+/**
+ * 基础
+ */
+.share-content-base .items {
+    border: 0.1rem dashed #e4e4e4;
+    min-height: 8.5rem;
+    max-height: 8.5rem;
+}
+.share-content-base .items:hover {
+    border: 0.1rem dashed #2196F3;
+    background: #eaf6ff;
+}
+.share-content-base .items .immages-tag img {
+    max-height: 4rem;
+}
+.share-content .items .am-scrollable-vertical {
+    height: 4rem;
+}
+
+/**
+ * 编辑
+ */
+.am-panel .am-form-group:last-child {
+    border-bottom: 0;
+}
+
+/**
+ * 管理
+ */
+.share-content .nav-items {
+    border: 0.1rem solid #eee;
+    background: #f5f5f5; 
+}
+.share-content .nav-items:hover {
+    border: 0.1rem solid #2196F3;
+    background: #eaf6ff;
+    font-weight: bold;
+}

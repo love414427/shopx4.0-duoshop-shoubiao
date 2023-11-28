@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 1152361 */
+  src: url('iconfont.woff2?t=1653232836722') format('woff2'),
+       url('iconfont.woff?t=1653232836722') format('woff'),
+       url('iconfont.ttf?t=1653232836722') format('truetype');
+}
+
+.icon-facebook:before {
+  content: "\e953";
+}
+
+.icon-twitter:before {
+  content: "\e66c";
+}
+
+.icon-sina:before {
+  content: "\e71d";
+}
+
+.icon-qq:before {
+  content: "\e600";
+}
+
+.icon-url:before {
+  content: "\e639";
+}
+
+.icon-qzone:before {
+  content: "\e62b";
+}
+
+.icon-share:before {
+  content: "\e9d1";
+}
+
+.icon-weixin:before {
+  content: "\e64e";
+}
+

@@ -1,0 +1,245 @@
+/**
+ * 导航
+ */
+.user-content-body .am-nav {
+    border-bottom: 0.1rem solid #EBECED;
+}
+
+.user-content-body .am-nav li {
+    margin-bottom: -0.1rem;
+}
+
+.user-content-body .am-nav li a {
+    font-size: 1.6rem;
+    color: #5F6264;
+}
+
+.user-content-body .am-nav .am-active {
+    border-bottom: 0.2rem solid var(--color-main);
+}
+
+.user-content-body .am-nav-pills>li:first-of-type {
+    margin-left: 0;
+}
+
+.user-content-body .am-nav>li>a:hover,
+.user-content-body .am-nav>li>a:focus {
+    background: transparent;
+}
+
+.user-content-body .am-nav .am-topbar-right {
+    margin-right: 0;
+    text-align: right;
+}
+
+.user-content-body .am-nav .am-topbar-right .am-btn:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.user-content-body .am-nav .am-topbar-right .am-topbar-btn {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 640px) {
+    .user-content-body .am-nav li a {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .user-content-body .am-nav .am-topbar-right .am-topbar-btn {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .user-content-body .am-nav .am-topbar-right .am-topbar-btn span {
+        display: none;
+    }
+}
+
+/**
+ * 账户信息
+ */
+@media only screen and (max-width: 920px) {
+    .user-content-body .account-info {
+        flex-direction: column;
+        align-items: start;
+    }
+    .user-content-body .account-info > div {
+        align-items: start;
+    }
+}
+
+/**
+ * 业务弹窗
+ */
+.user-content-body .business-item label {
+    margin-bottom: 0px;
+}
+
+.user-content-body .business-item h3 {
+    font-weight: 700;
+}
+
+.user-content-body .business-item ul {
+    padding: 0.5rem 0.1rem;
+    overflow: hidden;
+}
+
+.user-content-body .business-item ul li {
+    border: 0.1rem solid transparent;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 0.1rem solid #eee;
+    margin: 0 1rem 1rem 0;
+    background: #fff;
+}
+
+.user-content-body .business-item ul li img {
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+.user-content-body .business-item ul li:hover,
+.user-content-body .business-item ul li.selected {
+    border-color: #e4383c;
+    position: relative;
+    box-shadow: 0px 0 0px 0.1rem #e4383c;
+}
+
+@media only screen and (min-width:640px) {
+    .user-content-body .business-item ul li {
+        width: calc(33% - 0.5rem);
+    }
+
+    .user-content-body .business-item ul li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .user-content-body .business-item ul li {
+        width: calc(50% - 0.5rem);
+    }
+
+    .user-content-body .business-item ul li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+/**
+ * 转账窗口
+ */
+#plugins-wallet-transfer-modal .am-form-group {
+    margin-bottom: 1.4rem;
+}
+#plugins-wallet-transfer-modal .am-form-group label {
+    min-width: 7rem;
+}
+
+#plugins-wallet-transfer-modal .am-form-group input {
+    height: 4.4rem;
+    line-height: 4.4rem;
+}
+#plugins-wallet-transfer-modal .am-form-group .am-input-group-btn button {
+    height: 4.4rem;
+}
+
+/**
+ * 充值窗口
+ */
+#plugins-wallet-recharge-modal .am-popup-hd{
+    border-bottom: 0.1rem solid #eee;
+}
+@media only screen and (max-width:640px) {
+    .recharge-price-list .recharge-price-content .unit{
+        font-size: 1.2rem;
+    }
+
+    .recharge-price-list .recharge-price-content .recharge-price-value{
+        font-size: 1.6rem;
+    }
+}
+
+
+/**
+ * 支付选择窗口
+ */
+#plugins-wallet-recharge-pay-popup .base {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: #f6f6f6;
+    border: 0.1rem solid #efefef;
+}
+
+#plugins-wallet-recharge-pay-popup .base p {
+    line-height: 2.4rem;
+}
+
+#plugins-wallet-recharge-pay-popup .base .recharge-no {
+    font-weight: 700;
+    color: #666;
+}
+
+
+/**
+ * 列表
+ */
+.user-content-body .data-list {
+    margin-top: 1rem;
+}
+
+.user-content-body .data-list .money-bold {
+    font-weight: 700;
+}
+
+.user-content-body .data-list .money {
+    color: #E4393C;
+}
+
+/**
+ * 钱包充值
+ */
+.recharge-price-item {
+    width: calc(100% - 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+.recharge-price-list {
+    width: calc(100% / 4);
+    line-height: 7rem;
+    padding: 1rem 0.5rem;
+}
+.recharge-price-content {
+    background: #F5F7F9;
+    border: 0.1rem solid #F5F7F9;
+    transition: all 0.3s ease-in-out;
+}
+.recharge-price-list.active .recharge-price-content {
+    background: rgba(226, 44, 8, 0.06);
+    color: #E22C08;
+    border: 0.1rem solid #E22C08;
+}
+.recharge-price-content .tips {
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+    background: #D8D8D8 linear-gradient(107deg, #FC6F31 0%, #E22C08 100%);
+    border-radius: 0.8rem 0 0.8rem 0;
+    top: -1rem;
+    left: -0.1rem;
+}
+.recharge-price-input {
+    padding: 1.6rem 1.4rem;
+    background: #F5F7F9;
+}
+.recharge-price-input input,
+.recharge-price-input input:focus {
+    background: #F5F7F9 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.rule-point{
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #E22C08;
+}

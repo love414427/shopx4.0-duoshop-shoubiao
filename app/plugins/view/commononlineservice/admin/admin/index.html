@@ -1,0 +1,142 @@
+{{include file="public/header" /}}
+
+<!-- right content start  -->
+<div class="content-right">
+    <div class="content">
+        <legend>
+            <span class="am-text-default">在线客服</span>
+            <a href="{{:MyUrl('admin/pluginsadmin/index')}}" class="am-fr am-text-xs am-margin-top-sm am-icon-mail-reply"> {{:MyLang('retreat_title')}}</a>
+        </legend>
+
+        <div class="commononlineservice-content">
+            <div class="items">
+                <label>标题</label>
+                <div>
+                    {{if !empty($data['title'])}}
+                        {{$data.title}}
+                    {{else /}}
+                        <span class="am-text-grey">未填写</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>在线客服伸缩按钮</label>
+                <div class="immages-tag">
+                    {{if empty($data['online_service_btn'])}}
+                        <span class="am-text-grey">未设置</span>
+                    {{else /}}
+                        <img src="{{$data.online_service_btn}}" />
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>二维码</label>
+                <div class="immages-tag">
+                    {{if empty($data['qrcode_images'])}}
+                        <span class="am-text-grey">未设置</span>
+                    {{else /}}
+                        <img src="{{$data.qrcode_images}}" />
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>二维码说明</label>
+                <div>
+                    {{if !empty($data['qrcode_images_desc'])}}
+                        {{$data.qrcode_images_desc}}
+                    {{else /}}
+                        <span class="am-text-grey">未填写</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>QQ客服</label>
+                <div>
+                    {{if !empty($data['online_service_qq'])}}
+                        {{$data.online_service_qq|raw}}
+                    {{else /}}
+                        <span class="am-text-grey">未填写</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>WhatsApp</label>
+                <div>
+                    {{if !empty($data['online_service_whatsapp'])}}
+                        {{$data.online_service_whatsapp|raw}}
+                    {{else /}}
+                        <span class="am-text-grey">未填写</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>电话</label>
+                <div>
+                    {{if !empty($data['tel'])}}
+                        {{$data.tel}}
+                    {{else /}}
+                        <span class="am-text-grey">未填写</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>开启在线客服</label>
+                <div>
+                    {{if isset($data['is_plugins_chat']) and $data['is_plugins_chat'] eq 1}}
+                        是
+                    {{else /}}
+                        否
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>在线客服按钮文本名称</label>
+                <div>
+                    {{if !empty($data['plugins_chat_btn_text'])}}
+                        {{$data.plugins_chat_btn_text}}
+                    {{else /}}
+                        <span class="am-text-grey">未填写</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="items">
+                <label>是否全局</label>
+                <div>
+                    {{if isset($data['is_overall']) and $data['is_overall'] eq 1}}
+                        是
+                    {{else /}}
+                        否
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="items">
+                <label>{{:MyLang('form_bg_color_title')}}</label>
+                <div class="bg-color-tag" {{if !empty($data['bg_color'])}}style="background:{{$data.bg_color}}"{{/if}}></div>
+            </div>
+            <div class="items">
+                <label>距离顶部</label>
+                <div>
+                    {{if !empty($data['distance_top'])}}
+                        {{$data.distance_top}}
+                    {{else /}}
+                        0
+                    {{/if}}
+                    %
+                </div>
+            </div>
+
+            <div class="am-text-right am-padding-bottom-lg">
+                <a href="{{:PluginsAdminUrl('commononlineservice', 'admin', 'saveinfo')}}" class="am-btn am-btn-secondary am-radius btn-loading-example am-btn-sm">
+                    <i class="am-icon-edit"></i>
+                    <span>{{:MyLang('edit_title')}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- right content end  -->
+
+<!-- footer start -->
+{{include file="public/footer" /}}
+<!-- footer end -->

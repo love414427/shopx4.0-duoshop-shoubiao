@@ -1,0 +1,32 @@
+{
+    "base":{
+        "plugins":"usercentertopnotice",
+        "name":"用户中心顶部公告",
+        "logo":"\/static\/upload\/images\/plugins_usercentertopnotice\/2019\/02\/12\/1549671733967341.jpg",
+        "author":"Devil",
+        "author_url":"https:\/\/shopxo.net\/",
+        "version":"2.0.0",
+        "desc":"用户中心顶部公告，通知",
+        "apply_terminal":[
+            "pc",
+            "h5"
+        ],
+        "apply_version":[
+            "3.0.0"
+        ],
+        "is_home":false
+    },
+    "hook":{
+        "plugins_view_user_base_bottom":[
+            "app\\plugins\\usercentertopnotice\\Hook"
+        ]
+    },
+    "history":[
+        {
+            "host":"shopxo.com",
+            "url":"http:\/\/shopxo.com\/",
+            "ip":"127.0.0.1",
+            "time":"2023-08-27 15:03:26"
+        }
+    ]
+}

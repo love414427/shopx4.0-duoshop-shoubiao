@@ -1,0 +1,204 @@
+/**
+ * 客服基础样式
+ */
+.commononlineservice .float-left, .commononlineservice .content {
+    background: var(--color-main);
+}
+.commononlineservice {
+    font-size: 1.2rem;
+    position: fixed;
+    top: 30%;
+    right: 0px;
+    z-index: 1001;
+}
+.commononlineservice .float-left {
+    width: 3.5rem;
+    float:left;
+    position: relative;
+    z-index:1;
+    margin-top: 0;
+    height: 12rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+.commononlineservice .float-left a {
+    font-size:0;
+    text-indent: -999em;
+}
+.commononlineservice .content {
+    float: left;
+    padding: 0.5rem;
+    overflow:hidden;
+    border-bottom-left-radius: var(--border-radius);
+    display: none;
+}
+.commononlineservice .content .cn {
+    background:#fff;
+    padding: 0 0.8rem;
+}
+.commononlineservice .cn .title {
+    font-size: 1.4rem;
+    color: #333;
+    text-align:center;
+    padding-top: 0.5rem;
+}
+.commononlineservice .cn .qrcode {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: solid 0.1rem #f8f8f8;
+    margin-bottom: 1rem;
+}
+.commononlineservice .cn .qrcode img {
+    max-width: 11.5rem;
+    max-height: 11.5rem;
+}
+.commononlineservice .cn .qrcode p {
+    margin-top: 0.5rem;
+}
+.commononlineservice .cn ul {
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+.commononlineservice .cn ul li {
+    line-height: 4rem;
+    height:4rem;
+    overflow: hidden;
+    text-align:center;
+}
+.commononlineservice .cn ul li:last-child {
+    border: 0;
+}
+.commononlineservice .cn ul li .service-btn {
+    border: 0.1rem solid #eee;
+    border-radius: 5rem;
+    display: block;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: left;
+    padding: 0 1rem 0 0.2rem;
+}
+.commononlineservice .cn ul li .service-btn img {
+    width: 3rem;
+    height: 3rem;
+    float: left;
+}
+@media only screen and (min-width: 641px) {
+    .commononlineservice .cn ul li .service-btn:hover {
+        background: rgb(178 178 178 / 10%);
+        border-color: #ccc;
+    }
+}
+.commononlineservice .btn-open, .commononlineservice .btn-ctn {
+    position: relative;
+    z-index:9;
+    top:0;
+    left: 0;
+    background-image: url(../../../images/commononlineservice/btn.png);
+    background-repeat: no-repeat;
+    display:block;
+    height: 12rem;
+    background-size: 5.5rem;
+}
+.commononlineservice .btn-open {
+    background-position: 0.3rem 1rem;
+}
+.commononlineservice .btn-ctn {
+    background-position: -2.4rem 1rem;
+    display: none;
+}
+.commononlineservice ul li.top {
+    border-bottom: solid #ACE5F9 0.1rem;
+}
+.commononlineservice ul li.bot {
+    border-bottom: none;
+}
+
+/**
+ * 在线客服插件样式
+ */
+.commononlineservice-plugins-chat-entry {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.6rem rgb(0 0 0 / 6%), 0 0.2rem 3.2rem rgb(0 0 0 / 16%);
+    text-align: center;
+}
+.commononlineservice-plugins-chat-entry-text {
+    background: #4caf50;
+    padding: 0.5rem 1.2rem;
+    border-radius: 100rem;
+    color: #fff;
+}
+.commononlineservice-plugins-chat-entry-text span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+.commononlineservice-plugins-chat-entry-text-vertical {
+    width: 5.5rem;
+    padding: 2rem 1.5rem;
+}
+.commononlineservice-plugins-chat-entry-text-vertical span {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: block;
+    line-height: 1.8rem;
+}
+.commononlineservice-plugins-chat-popup {
+    position: fixed;
+    z-index: 1050;
+    border-radius: 0.8rem;
+    transition: none 0s ease 0s;
+    width: 100%;
+    max-width: 110rem;
+    height: 68rem;
+    box-shadow: rgb(0 0 0 / 30%) 0.1rem 0.1rem 1.5rem 0px;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+@media only screen and (min-width: 1100px) {
+    .commononlineservice-plugins-chat-popup {
+        left: calc((100% - 110rem) / 2)
+    }
+}
+@media only screen and (min-height: 680px) {
+    .commononlineservice-plugins-chat-popup {
+        top: calc((100% - 68rem) / 2)
+    }
+}
+.commononlineservice-plugins-chat-popup .close-submit {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    color: #f5f5f5;
+    font-size: 2rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.commononlineservice-plugins-chat-popup .close-submit:hover {
+    color: #fff;
+}
+.commononlineservice-plugins-chat-popup iframe {
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 640px) {
+    .commononlineservice-plugins-chat-popup {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        left: 0;
+        top: 0;
+    }
+    .commononlineservice-plugins-chat-entry-text {
+        bottom: 6rem;
+    }
+}

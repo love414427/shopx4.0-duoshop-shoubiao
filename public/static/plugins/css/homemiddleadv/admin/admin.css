@@ -1,0 +1,27 @@
+/**
+ * 基础
+ */
+.homemiddleadv-content-base .items {
+    border: 0.1rem dashed #e4e4e4;
+    min-height: 8.5rem;
+    max-height: 8.5rem;
+}
+.homemiddleadv-content-base .items:hover {
+    border: 0.1rem dashed #2196F3;
+    background: #eaf6ff;
+}
+.homemiddleadv-content-base .items .immages-tag img {
+    max-height: 4rem;
+}
+.homemiddleadv-content-base .items .am-scrollable-vertical {
+    height: 4rem;
+}
+
+/**
+ * 编辑页面
+ */
+.form-date input {
+    display: -webkit-inline-box !important;
+    width: calc(50% - 0.9rem) !important;
+    margin-top: 0 !important;
+}

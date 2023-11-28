@@ -1,0 +1,27 @@
+/**
+ * 首页
+ */
+.usercentertopnotice-content .items {
+    margin: 1rem 0 2rem 0;
+    border-bottom: 0.1rem dashed #f1f1f1;
+    padding-bottom: 2rem;
+}
+.usercentertopnotice-content .edit-submit {
+    margin-bottom: 2rem;
+}
+
+/**
+ * 编辑页面
+ */
+ul.plugins-images-view li {
+    width: 100%;
+    height: auto;
+}
+.form-date input {
+    width: 30% !important;
+    display: -webkit-inline-box !important;
+}
+
+.form-date span {
+    vertical-align: middle;
+}
